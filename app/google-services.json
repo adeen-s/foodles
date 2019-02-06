@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "916492733623",
+    "firebase_url": "https://foodles-c3841.firebaseio.com",
+    "project_id": "foodles-c3841",
+    "storage_bucket": "foodles-c3841.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916492733623:android:fbd44bd108f447ad",
+        "android_client_info": {
+          "package_name": "me.adeen.foodles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916492733623-c4vjac4ns1eilfhb8786oqrf9v89flcl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.adeen.foodles",
+            "certificate_hash": "ff3ebb3af8fa91d66e0de65c7bb536cb00382ef6"
+          }
+        },
+        {
+          "client_id": "916492733623-lcear6jkgl1414db734s1dqn30dul517.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNRKdX_2RYr_jzR1iBYQoQsa9hpn9NIg8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916492733623-lcear6jkgl1414db734s1dqn30dul517.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
