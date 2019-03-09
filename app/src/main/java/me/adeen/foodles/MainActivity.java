@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, RestaurantActivity.class));
                         Toast.makeText(MainActivity.this, "Restaurant", Toast.LENGTH_SHORT).show();
                     } else {
+                        startActivity(new Intent(MainActivity.this, CustomerActivity.class));
                         Toast.makeText(MainActivity.this, "Customer", Toast.LENGTH_SHORT).show();
                     }
 

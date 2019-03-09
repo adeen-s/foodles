@@ -16,4 +16,32 @@ public class User {
         this.address = address;
         this.isRestaurant = isRestaurant;
     }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setRestaurant(boolean restaurant) {
+        isRestaurant = restaurant;
+    }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    tools:context=".RestaurantOrderActivity">
+
+    <TextView
+        android:id="@+id/restaurantOrderPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="No Orders Yet..."
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/restaurantOrderLatestOrder"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/restaurantOrderLatestOrder"
+        android:textSize="20sp"
+        android:id="@+id/restaurantOrderPreviousOrders"/>
+
+</RelativeLayout>

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RestaurantActivity"></activity>
+        <activity android:name=".CustomerOrderActivity"></activity>
+        <activity android:name=".RestaurantOrderActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".CustomerActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".RestaurantActivity" />
         <activity android:name=".MenuInputActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SignupActivity" />

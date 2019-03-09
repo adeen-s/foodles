@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -60,6 +61,7 @@ public class SignupActivity extends AppCompatActivity {
                                 nameInput.getText().toString().trim(),
                                 addressInput.getText().toString().trim(),
                                 radioRestaurant.isChecked());
+                        mFirebaseUser.updateProfile(new UserProfileChangeRequest.Builder().setDisplayName(user.getName()).build());
                         mDatabaseReference.child(mFirebaseUser.getUid()).setValue(user);
                         startActivity(new Intent(SignupActivity.this, MainActivity.class));
                         SignupActivity.this.finish();

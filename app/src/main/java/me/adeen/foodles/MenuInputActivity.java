@@ -44,7 +44,7 @@ public class MenuInputActivity extends AppCompatActivity {
     EditText priceInput;
     Item item;
     DatabaseReference mDatabaseReference;
-    CustomBaseAdapter adapter;
+    MenuInputAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ public class MenuInputActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu_input);
 
         items = new ArrayList<Item>();
-        adapter = new CustomBaseAdapter(MenuInputActivity.this, items);
+        adapter = new MenuInputAdapter(MenuInputActivity.this, items);
         listView = (ListView) findViewById(R.id.menuInputList);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -117,11 +117,11 @@ public class MenuInputActivity extends AppCompatActivity {
     }
 }
 
-class CustomBaseAdapter extends BaseAdapter {
+class MenuInputAdapter extends BaseAdapter {
     Context context;
     List<Item> items;
 
-    public CustomBaseAdapter(Context context, List<Item> items) {
+    public MenuInputAdapter(Context context, List<Item> items) {
         this.context = context;
         this.items = items;
     }

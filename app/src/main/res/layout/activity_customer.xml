@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    tools:context=".CustomerActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerRestaurantSearchInput"
+        android:hint="Search.."
+        android:layout_marginVertical="8dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/customerRestaurantList"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15.0sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/customerShowRestaurantList"
+            android:paddingVertical="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Restaurants"
+            android:src="@drawable/baseline_store_24" />
+
+        <ImageView
+            android:id="@+id/customerShowPreviousOrders"
+            android:paddingVertical="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="View Orders"
+            android:src="@drawable/baseline_assignment_24" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

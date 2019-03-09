@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    tools:context=".CustomerOrderActivity">
+
+    <TextView
+        android:id="@+id/customerOrderPlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="No Orders Yet..."
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/customerOrderLatestOrder"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/customerOrderLatestOrder"
+        android:textSize="20sp"
+        android:id="@+id/customerOrderPreviousOrders"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/customerOrderShowRestaurantList"
+            android:paddingVertical="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Restaurants"
+            android:src="@drawable/baseline_store_24" />
+
+        <ImageView
+            android:id="@+id/customerOrderShowPreviousOrders"
+            android:paddingVertical="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="View Orders"
+            android:src="@drawable/baseline_assignment_24" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
